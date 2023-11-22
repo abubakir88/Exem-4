@@ -78,11 +78,11 @@ header nav .nav-items .nav-item .nav-btn-2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 106.5%; /* 17.04px */
+  line-height: 106.5%;
   text-transform: capitalize;
   border-radius: 27px;
   background: transparent;
-  padding: 11px 21px;
+  padding: 12px 21px;
   border-radius: 6px;
   border: 2px solid #cf6f49;
   background: transparent;
@@ -134,10 +134,10 @@ header nav .nav-items .nav-item .bua:hover {
   background-color: #cf6f49;
 }
 header nav .nav-items .nav-item .bua:hover svg path {
-  fill: #fff;
+  fill: #fff !important;
 }
 header nav .nav-items .nav-item .bua:hover p {
-  color: #fff;
+  color: #fff !important;
 }
 header nav .nav-items .nav-item a {
   color: #222;
@@ -151,15 +151,15 @@ header nav .nav-items .nav-item:hover {
   transition: 0.4s;
 }
 header nav .nav-items .nav-item:hover a {
-  color: #cf6f49;
+  color: #cf6f49 !important;
   transition: 0.3s;
 }
 header nav .nav-items .nav-item:hover svg path {
-  fill: #cf6f49;
+  fill: #cf6f49 !important;
   transition: 0.4s;
 }
 header nav .nav-items .nav-item:hover p {
-  color: #cf6f49;
+  color: #cf6f49 !important;
   transition: 0.4s;
 }
 header nav .nav-items form select {
@@ -262,7 +262,7 @@ header nav .menu {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
   padding-bottom: 21px;
 }
 .hero .hero-content .hero-texts .search_bar {
@@ -329,7 +329,7 @@ header nav .menu {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 150% */
+  line-height: 27px;
 }
 .howit .howit_content .half-hero .logos {
   display: flex;
@@ -361,7 +361,7 @@ header nav .menu {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 57.6px; /* 120% */
+  line-height: 57.6px;
 }
 .howit .howit_content .general .how_title p {
   max-width: 754px;
@@ -1211,7 +1211,7 @@ footer .footer-content .foot-4 a {
 footer .footer-content .foot-2 a:hover,
 footer .footer-content .foot-3 a:hover,
 footer .footer-content .foot-4 a:hover {
-  color: #cf6f49;
+  color: #cf6f49 !important;
   transition: 0.3s;
 }
 footer .footer-content .foot-5 h6 {
@@ -1274,20 +1274,63 @@ footer .footer-content .foot-5 h5 {
   padding-top: 16px;
 }
 
+.footer__bottom {
+  background: #f5f5f2;
+  padding: 28px 0;
+}
+.footer__bottom .foot_bottom-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-left .logo svg {
+  color: #000;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-left p {
+  color: #65665c;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-right a {
+  border-radius: 50%;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-right a svg {
+  fill: #000;
+  transition: 0.5s;
+  width: 100%;
+}
+.footer__bottom .foot_bottom-cards .foot_bottom-right a:hover svg {
+  fill: #cf6f49;
+}
+
 .dark {
   background: #03001c;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .open .nav-items {
   background-color: #655f9b;
 }
 .dark .up {
   background-color: #1e175c;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark header {
   background-color: #0c083a;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark header nav .nav-items .nav-item svg path {
   fill: #fff;
@@ -1297,95 +1340,119 @@ footer .footer-content .foot-5 h5 {
 }
 .dark header nav .logo svg path:last-child {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark header nav .nav-items .nav-link-svg svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark header nav .nav-items .clone {
   border: 2px solid #cf6f49;
 }
 .dark header nav .nav-items .clone svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .hero {
   background-color: #03001c;
-  transition: 2s;
+  transition: 0.5s;
+}
+.dark .hero .hero-content .hero-texts p {
+  background-color: #1e175c;
+}
+.dark .best .best-content .best-texts p {
+  background-color: #1e175c;
 }
 .dark .best .best-content .best-btns button:hover {
   background-color: transparent;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .best .best-content .best-btns button svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
+}
+.dark .fast .fast-content .fast-texts p {
+  background-color: #1e175c;
 }
 .dark .fast .fast-content .fast-texts .best-btns button:hover {
   background-color: transparent;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .fast .fast-content .fast-texts .best-btns button svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .area {
   background-color: #03001c;
-  transition: 2s;
+  transition: 0.5s;
+}
+.dark .area .area-content .area-title p {
+  background-color: #1e175c;
 }
 .dark .area .cards .card {
   background-color: #06022e;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .location {
   background-color: #03001c;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .location .area-content .cards .card {
   background-color: #06022e;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .location .area-content .cards .card svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .location .area-content .best-btns button:hover {
   background-color: transparent;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .location .area-content .best-btns button svg path {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .say .say-content .say-cards .card {
   background-color: #06022e;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .latest {
   background-color: #03001c;
-  transition: 2s;
+  transition: 0.5s;
+}
+.dark .latest .latest-content .latest-texts p {
+  background-color: #1e175c;
 }
 .dark .latest .latest-content .latest-texts .ves a {
   background-color: transparent;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .latest .latest-content .latest-texts .ves a:hover {
   background-color: #cf6f49;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark .latest .latest-content .latest-cards .card {
   background-color: #06022e;
-  transition: 2s;
+  transition: 0.5s;
 }
 .dark footer .footer-content .foot-1 svg path:last-child {
   fill: #fff;
-  transition: 2s;
+  transition: 0.5s;
+}
+.dark .footer__bottom {
+  background-color: #06022e;
+}
+.dark .footer__bottom .foot_bottom-right a svg path {
+  fill: #fff;
+}
+.dark .footer__bottom .foot_bottom-right a svg path:hover {
+  fill: #1e175c;
 }
 
 .dark * {
   color: white !important;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -1444,7 +1511,7 @@ footer .footer-content .foot-5 h5 {
     font-size: 35px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .up .up-content {
     gap: 30%;
   }

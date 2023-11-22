@@ -4,12 +4,24 @@ modeBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark");
 });
 
-// const header = document.querySelector("body");
-// const menuBtn = document.querySelector(".menu");
+let mybutton = document.getElementById("myBtn");
 
-// menuBtn.addEventListener("click", () => {
-//   header.classList.toggle(".open");
-// });
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 const header = document.querySelector("header");
 const menuBtn = document.querySelector(".menu");
