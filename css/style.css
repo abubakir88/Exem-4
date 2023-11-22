@@ -539,8 +539,9 @@ header nav .menu {
 .fast .fast-content .fast-texts .fast-cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  row-gap: 30px;
 }
 .fast .fast-content .fast-texts .fast-cards .card svg {
   padding: 8px;
@@ -1063,6 +1064,8 @@ header nav .menu {
 .latest .latest-content .latest-texts .ves {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 .latest .latest-content .latest-texts .ves h6 {
   max-width: 710px;
@@ -1275,6 +1278,9 @@ footer .footer-content .foot-5 h5 {
   background: #03001c;
   transition: 2s;
 }
+.dark .open .nav-items {
+  background-color: #655f9b;
+}
 .dark .up {
   background-color: #1e175c;
   transition: 2s;
@@ -1282,6 +1288,12 @@ footer .footer-content .foot-5 h5 {
 .dark header {
   background-color: #0c083a;
   transition: 2s;
+}
+.dark header nav .nav-items .nav-item svg path {
+  fill: #fff;
+}
+.dark header nav .menu svg path {
+  fill: #fff;
 }
 .dark header nav .logo svg path:last-child {
   fill: #fff;
@@ -1430,6 +1442,65 @@ footer .footer-content .foot-5 h5 {
   }
   .fast .fast-content .fast-texts h1 {
     font-size: 35px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .up .up-content {
+    gap: 30%;
+  }
+  .hero .hero-content .hero-texts {
+    padding: 20px;
+  }
+  .hero .hero-content .hero-texts h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+  .hero .hero-content .hero-texts h2 {
+    line-height: 25px;
+  }
+  .best {
+    padding-bottom: 40px;
+  }
+  .best .best-content .best-texts .best-btns {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+  .fast {
+    padding-bottom: 40px;
+  }
+  .area .area-content {
+    padding-top: 40px;
+  }
+  .area .area-content .area-title h1 {
+    font-size: 30px;
+  }
+  .area .area-content .cards {
+    padding-top: 40px;
+  }
+  .area .area-content .best-btns {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .family .family-content h2 {
+    font-size: 30px;
+    padding-bottom: 12px;
+  }
+  .say .say-content .say-title {
+    gap: 8px;
+  }
+  .say .say-content .say-title h1 {
+    font-size: 30px;
+  }
+  .say .say-content .say-cards {
+    padding-top: 30px;
+  }
+  .latest .latest-content {
+    padding: 40px 0;
+  }
+  .howit .howit_content .half-hero .logos {
+    justify-content: space-between;
   }
 }
 #myBtn {

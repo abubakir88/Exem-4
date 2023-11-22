@@ -556,8 +556,9 @@ header {
       .fast-cards {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+        row-gap: 30px;
         .card {
           svg {
             padding: 8px;
@@ -1104,6 +1105,8 @@ header {
       .ves {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
         h6 {
           max-width: 710px;
           color: #65665c;
@@ -1326,6 +1329,9 @@ footer {
 .dark {
   background: #03001c;
   transition: 2s;
+  .open .nav-items {
+    background-color: #655f9b;
+  }
   .up {
     background-color: #1e175c;
     transition: 2s;
@@ -1333,8 +1339,13 @@ footer {
   header {
     background-color: #0c083a;
     transition: 2s;
-
+    nav .nav-items .nav-item svg path {
+      fill: #fff;
+    }
     nav {
+      .menu svg path {
+        fill: #fff;
+      }
       .logo svg path:last-child {
         fill: #fff;
         transition: 2s;
@@ -1512,6 +1523,70 @@ footer {
   }
   .fast .fast-content .fast-texts h1 {
     font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .up .up-content {
+    gap: 30%;
+  }
+  .hero .hero-content .hero-texts {
+    padding: 20px;
+    h1 {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 0;
+    }
+    h2 {
+      line-height: 25px;
+    }
+  }
+  .best {
+    padding-bottom: 40px;
+    .best-content .best-texts .best-btns {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 20px;
+    }
+  }
+  .fast {
+    padding-bottom: 40px;
+  }
+  .area .area-content {
+    padding-top: 40px;
+    .area-title h1 {
+      font-size: 30px;
+    }
+    .cards {
+      padding-top: 40px;
+    }
+    .best-btns {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+  .family .family-content {
+    h2 {
+      font-size: 30px;
+      padding-bottom: 12px;
+    }
+  }
+  .say .say-content {
+    .say-title {
+      gap: 8px;
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .say-cards {
+      padding-top: 30px;
+    }
+  }
+  .latest .latest-content {
+    padding: 40px 0;
+  }
+  .howit .howit_content .half-hero .logos {
+    justify-content: space-between;
   }
 }
 
