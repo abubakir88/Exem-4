@@ -268,7 +268,9 @@ header nav .menu {
 .hero .hero-content .hero-texts .search_bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
+  margin-bottom: 20px;
 }
 .hero .hero-content .hero-texts .search_bar .nav-input {
   display: flex;
@@ -318,6 +320,7 @@ header nav .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .howit .howit_content .half-hero p {
   max-width: 243px;
@@ -331,6 +334,7 @@ header nav .menu {
 .howit .howit_content .half-hero .logos {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .howit .howit_content .half-hero .logos svg:hover path {
@@ -372,6 +376,8 @@ header nav .menu {
 .howit .howit_content .general .cards {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 .howit .howit_content .general .cards .card {
   border-radius: 16px;
@@ -424,6 +430,9 @@ header nav .menu {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
+}
+.best .best-content .best-img img {
+  max-width: 100%;
 }
 .best .best-content .best-texts p {
   color: #2a2c1f;
@@ -494,6 +503,9 @@ header nav .menu {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.fast .fast-content .fast-img img {
+  max-width: 100%;
+}
 .fast .fast-content .fast-texts p {
   color: #2a2c1f;
   font-family: Roboto;
@@ -528,6 +540,7 @@ header nav .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .fast .fast-content .fast-texts .fast-cards .card svg {
   padding: 8px;
@@ -615,7 +628,7 @@ header nav .menu {
 .area .area-content .cards {
   padding-top: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -774,12 +787,12 @@ header nav .menu {
 .location .area-content .cards {
   padding: 80px 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
 }
 .location .area-content .cards .card {
-  width: clamp(175px, 33%, 400px);
+  width: clamp(218px, 33%, 400px);
   border-radius: 16px;
   border: 1px solid #e7e8e3;
   background: #fff;
@@ -943,6 +956,8 @@ header nav .menu {
   padding-top: 80px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 .say .say-content .say-cards .card {
   width: clamp(340px, 32%, 70%);
@@ -1170,6 +1185,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 30px;
 }
 footer .footer-content .foot-2,
 footer .footer-content .foot-3,
@@ -1358,4 +1374,81 @@ footer .footer-content .foot-5 h5 {
 .dark * {
   color: white !important;
   transition: 2s;
+}
+
+@media only screen and (max-width: 1360px) {
+  .hero .hero-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hero .hero-content .hero-img img {
+    max-width: 100%;
+  }
+  .hero .hero-content .hero-texts {
+    max-width: 100%;
+    padding-top: 30px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .best .best-content {
+    justify-content: center;
+  }
+  .best .best-content .best-texts {
+    padding-top: 20px;
+  }
+  .best .best-content .best-texts h1 {
+    max-width: 100%;
+  }
+  .best .best-content .best-texts h5 {
+    max-width: 100%;
+  }
+  .fast .fast-content {
+    justify-content: center;
+  }
+  .fast .fast-content .fast-texts {
+    padding-top: 20px;
+  }
+  .fast .fast-content .fast-texts h1 {
+    max-width: 100%;
+  }
+  .fast .fast-content .fast-texts h5 {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero .hero-content .hero-texts h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .howit .howit_content .half-hero p {
+    max-width: 450px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+  .best .best-content .best-texts h1 {
+    font-size: 35px;
+  }
+  .fast .fast-content .fast-texts h1 {
+    font-size: 35px;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cf6f49;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #c88266;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
